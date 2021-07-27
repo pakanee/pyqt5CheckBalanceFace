@@ -150,9 +150,9 @@ class Ui_CheckBalance(object):
         self.pushButton_API.setText(_translate("CheckBalance", "API"))
 
     def getAPI(self):
-        url = 'http://192.168.1.199/ISAPI/Security/userCheck'
+        url = 'http://192.168.1.211/ISAPI/Security/userCheck'
         response = requests.get(url, auth=HTTPDigestAuth('admin','Abc12345'))
-        print(response.text())
+        print(response.content)
 import MyImage_rc
 
 
