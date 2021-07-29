@@ -1,0 +1,5 @@
+SELECT TOP 6 * FROM (
+SELECT cashier_code,befbalamt,amt,balamt,txndate,'C' AS terminal FROM tvcashierprocessall WHERE card_no = 0002121074
+UNION
+SELECT terminal_code,befamtuse, amtuse,amtbal,txndate,'T' AS terminal FROM tvterminalprocess WHERE card_no = 0002121074
+)X ORDER BY txndate
