@@ -76,7 +76,7 @@ background-image: url(:/image/TCMLOGO.jfif);</string>
      <string>Person No.</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="label_PersonName">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -104,7 +104,11 @@ background-image: url(:/image/TCMLOGO.jfif);</string>
       <height>181</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout"/>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTableView" name="tableView_transection"/>
+     </item>
+    </layout>
    </widget>
    <widget class="QLabel" name="label_AmountCanUse">
     <property name="geometry">
@@ -162,7 +166,7 @@ background-image: url(:/image/TCMLOGO.jfif);</string>
      <string>Personal Leave</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_RemainingLeave">
+   <widget class="QLineEdit" name="lineEdit_MedicalRemaining">
     <property name="geometry">
      <rect>
       <x>670</x>
@@ -172,7 +176,7 @@ background-image: url(:/image/TCMLOGO.jfif);</string>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_MedicalExpenses">
+   <widget class="QLineEdit" name="lineEdit_RemainLeave">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -182,7 +186,7 @@ background-image: url(:/image/TCMLOGO.jfif);</string>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_7">
+   <widget class="QLineEdit" name="lineEdit_MedicalExpenses">
     <property name="geometry">
      <rect>
       <x>450</x>
